@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidlessonspart3">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activities.NewsMainCategoriesActivity"/>
+        <activity android:name=".ui.activities.DisneyCharactersActivity"/>
     </application>
 
 </manifest>

@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initLayout() {
         binding.apply {
-            newsApiCall.setOnClickListener {
-                Intent(this@MainActivity, NewsMainCategoriesActivity::class.java
+            disneyApiCall.setOnClickListener {
+                Intent(this@MainActivity, DisneyCharactersActivity::class.java
                 ).also {
                     startActivity(it)
                 }

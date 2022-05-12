@@ -8,7 +8,7 @@
 
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/newsApiCall"
+        android:id="@+id/disneyApiCall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,6 +18,6 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:text="@string/news_api_call"/>
+        android:text="@string/disney_api_call"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
