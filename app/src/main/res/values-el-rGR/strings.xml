@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidLessonsPart3</string>
+    <string name="registration_text">Παράδειγμα φόρμας εγγραφής</string>
+    <string name="recyclerview_text">Παράδειγμα Λίστας</string>
+    <string name="toast_text">Αυτό είναι ένα τυχαίο μήνυμα.</string>
+</resources>
