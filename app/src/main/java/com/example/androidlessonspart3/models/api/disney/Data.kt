@@ -1,9 +1,11 @@
 package com.example.androidlessonspart3.models.api.disney
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Data(
     val _id: Int,
-    val allies: List<Any>,
-    val enemies: List<Any>,
     val films: List<String>,
     val imageUrl: String,
     val name: String,
@@ -12,4 +14,4 @@ data class Data(
     val tvShows: List<String>,
     val url: String,
     val videoGames: List<String>
-)
+) : Parcelable

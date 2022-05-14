@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".ui.activities.NewsMainCategoriesActivity"/>
         <activity android:name=".ui.activities.DisneyCharactersActivity"/>
+        <activity android:name=".ui.activities.DisneyCharacterDetailsActivity"/>
     </application>
 
 </manifest>

@@ -8,7 +8,8 @@ import coil.load
 import com.example.androidlessonspart3.databinding.HolderDisneyCharacterBinding
 import com.example.androidlessonspart3.models.api.disney.Data
 
-class DisneyCharactersAdapter : RecyclerView.Adapter<DisneyCharacterViewHolder>() {
+class DisneyCharactersAdapter(private val onCharacterClicked: (Data) -> Unit) :
+    RecyclerView.Adapter<DisneyCharacterViewHolder>() {
 
     private val disneyCharactersList = arrayListOf<Data>()
 
@@ -16,7 +17,7 @@ class DisneyCharactersAdapter : RecyclerView.Adapter<DisneyCharacterViewHolder>(
         return DisneyCharacterViewHolder(
             HolderDisneyCharacterBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
-            )
+            ), onCharacterClicked
         )
     }
 
@@ -32,7 +33,10 @@ class DisneyCharactersAdapter : RecyclerView.Adapter<DisneyCharacterViewHolder>(
     }
 }
 
-class DisneyCharacterViewHolder(private val binding: HolderDisneyCharacterBinding) :
+class DisneyCharacterViewHolder(
+    private val binding: HolderDisneyCharacterBinding,
+    private val onCharacterClicked: (Data) -> Unit
+) :
     RecyclerView.ViewHolder(binding.root) {
 
     fun bind(model: Data) {
@@ -40,6 +44,10 @@ class DisneyCharacterViewHolder(private val binding: HolderDisneyCharacterBindin
             name.text = model.name
             info.text = model.url
             image.load(model.imageUrl)
+
+            itemView.setOnClickListener {
+                onCharacterClicked.invoke(model)
+            }
         }
     }
 }
