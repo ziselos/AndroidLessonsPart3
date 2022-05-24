@@ -58,6 +58,10 @@ dependencies {
     // splash
     implementation 'androidx.core:core-splashscreen:1.0.0-beta01'
 
+    // nav controller
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
     // retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.google.code.gson:gson:2.8.8'

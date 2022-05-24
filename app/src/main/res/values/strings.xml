@@ -13,4 +13,10 @@
     <string name="choose_category_text" translatable="false">Choose category news</string>
 
     <string name="api_call_error_text" translatable="false">Opps!Something went wrong...</string>
+
+
+    <!-- Nav Host -->
+    <string name="sales_button_text" translatable="false">Sales</string>
+    <string name="refund_button_text" translatable="false">Refund</string>
+    <string name="settings_button_text" translatable="false">Settings</string>
 </resources>

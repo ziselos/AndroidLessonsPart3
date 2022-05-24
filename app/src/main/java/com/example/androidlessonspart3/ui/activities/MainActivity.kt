@@ -26,6 +26,12 @@ class MainActivity : AppCompatActivity() {
                     startActivity(it)
                 }
             }
+            navControllerButton.setOnClickListener {
+                Intent(this@MainActivity, NavHostActivity::class.java)
+                    .also {
+                        startActivity(it)
+                    }
+            }
         }
     }
 }

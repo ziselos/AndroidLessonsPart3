@@ -24,6 +24,7 @@
         <activity android:name=".ui.activities.NewsMainCategoriesActivity"/>
         <activity android:name=".ui.activities.DisneyCharactersActivity"/>
         <activity android:name=".ui.activities.DisneyCharacterDetailsActivity"/>
+        <activity android:name=".ui.activities.NavHostActivity"/>
     </application>
 
 </manifest>
